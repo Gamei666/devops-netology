@@ -1,2 +1,2 @@
 # devops-netology
-Repository for studying purposes
+Repository for studying purposes and practice
