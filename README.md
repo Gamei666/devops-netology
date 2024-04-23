@@ -18,3 +18,6 @@
 Задача 4
 
 ![image](https://github.com/Gamei666/devops-netology/assets/67197577/0d7bd30c-e726-4486-b59d-0442dfff553d)
+
+Задача 5
+
