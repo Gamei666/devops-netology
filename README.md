@@ -19,5 +19,19 @@
 
 ![image](https://github.com/Gamei666/devops-netology/assets/67197577/0d7bd30c-e726-4486-b59d-0442dfff553d)
 
-Задача 5
+Задача 5.1-5.2 При наличии файлов compose.yaml и docker-compose.yaml выполняется файл compose.yaml, так как поддержка имени docker-compose.yaml оставлена только для обратной совместимости.
 
+![image](https://github.com/Gamei666/devops-netology/assets/67197577/68fbfe87-1c22-47cd-bc45-f8c3e7c6f065)
+
+Задача 5.3
+
+![image](https://github.com/Gamei666/devops-netology/assets/67197577/f1b98011-b988-4486-8c8b-6cbe0e0e79ab)
+
+
+Задача 5.4-5.6
+
+![image](https://github.com/Gamei666/devops-netology/assets/67197577/faf75f48-a00a-4ab5-8f53-af474fed5ca9)
+
+Задача 5.7 Здесь docker compose предупреждает нас, что найдены контейнеры-сироты, то есть контейнеры, которые были подняты docker-compose ранее, но теперь описание для данных контейнеров не найдено. Docker compose предлагает перезапустить сборку с флагом, который удалит все контейнеры-сироты.
+
+![image](https://github.com/Gamei666/devops-netology/assets/67197577/a9e01b35-ba1d-425a-8241-295d37932b81)
