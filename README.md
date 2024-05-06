@@ -30,3 +30,8 @@ Crontab
 Дампы
 
 ![image](https://github.com/Gamei666/devops-netology/assets/67197577/391a880f-2453-4380-9fcc-45be47f03a11)
+
+Задача 6
+
+![image](https://github.com/Gamei666/devops-netology/assets/67197577/b2e210e6-3d1a-4f06-a5ac-621571b8a980)
+
