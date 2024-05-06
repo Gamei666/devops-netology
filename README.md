@@ -8,6 +8,10 @@
 
 ![image](https://github.com/Gamei666/devops-netology/assets/67197577/0f64894c-72fa-4365-8e7f-c1f198ebc2c2)
 
+Docker Remote Context
+
+![image](https://github.com/Gamei666/devops-netology/assets/67197577/787d283e-2fb6-4734-a764-1ee5e5b19dc8)
+
 Ссылка на форк https://github.com/Gamei666/shvirtd-example-python Bash-скрипт лежит там же
 
 Задача 5 
@@ -34,4 +38,12 @@ Crontab
 Задача 6
 
 ![image](https://github.com/Gamei666/devops-netology/assets/67197577/b2e210e6-3d1a-4f06-a5ac-621571b8a980)
+
+Задача 6.1
+
+![image](https://github.com/Gamei666/devops-netology/assets/67197577/a75b8c34-782f-4f01-8a29-171a1ff6130e)
+
+Задача 6.2
+
+![image](https://github.com/Gamei666/devops-netology/assets/67197577/1953cbec-130b-4a9f-bc2d-859ed98ec7da)
 
