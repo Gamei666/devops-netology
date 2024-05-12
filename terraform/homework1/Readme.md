@@ -25,5 +25,5 @@
 Докер-образ nginx не был удалён, потому что в описании ресурса стоял ключ keep_locally = true, который сохраняет образ при terraform destroy. В документации он описан так.
 keep_locally (Boolean) If true, then the Docker image won't be deleted on destroy operation. If this is false, it will delete the image from the docker local storage on destroy operation.
 
-Задание 2.1
-Код для подъёма ВМ находиится в корне в файле vmprovision.tf, код для docker remote context находится в папке terradocker.
+Задание 2
+Код для подъёма ВМ находиится в папке Zadanie2 в файле vmprovision.tf, код для docker remote context находится в папке terradocker.
