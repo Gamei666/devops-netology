@@ -1,11 +1,6 @@
-output "default" {
-   value = [
-    {
-    count = length(yandex_compute_instance.db)
-   },
-   {
-    "name" = "${["yandex_compute_instance"]["db"][count.index].name}"
-   }
-   ]
-   
+output "ip" {
+  value = {
+    for i in yandex_compute_instance.db:
+    "name" => i.name
+  }
 }
