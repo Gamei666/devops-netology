@@ -30,3 +30,9 @@
 Возвращаем подсеть в стейт
 
 ![image](https://github.com/Gamei666/devops-netology/assets/67197577/8f88b008-10e6-4926-8652-3c309cade651)
+
+Проверяем стейт и plan
+
+![image](https://github.com/Gamei666/devops-netology/assets/67197577/eb3af0f0-9a8c-436f-85ef-ba4c0ee9c938)
+
+Задание 4
