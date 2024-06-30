@@ -36,3 +36,11 @@
 ![image](https://github.com/Gamei666/devops-netology/assets/67197577/eb3af0f0-9a8c-436f-85ef-ba4c0ee9c938)
 
 Задание 4
+
+План выполнения
+
+![image](https://github.com/Gamei666/devops-netology/assets/67197577/50cc05db-4547-4149-93bd-e7de04ac8d66)
+
+Результат из консоли YC
+
+![image](https://github.com/Gamei666/devops-netology/assets/67197577/6b3fa38c-8cdf-45fb-9fb1-a725119b15a1)
