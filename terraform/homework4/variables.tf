@@ -31,3 +31,8 @@ variable "ssh" {
   type = string
   description = "Your very secret SSH Key"
 }
+variable "dbpass" {
+  type = string
+  sensitive = true
+  description = "Your very secret password for database user"
+}

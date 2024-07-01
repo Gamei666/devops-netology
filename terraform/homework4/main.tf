@@ -45,7 +45,6 @@ module "analytics" {
 
 }
 
-#Пример передачи cloud-config в ВМ для демонстрации №3
 data "template_file" "cloudinit" {
   template = file("./cloud-init.yml")
   vars = {
@@ -54,3 +53,19 @@ data "template_file" "cloudinit" {
     }
 }
 
+module "db_cluster" {
+  source = "./mysql_cluster"
+  name = "example"
+  HA = true
+  subnet_ids = module.vpc.result.subnet_id
+  subnet_zone = module.vpc.result.zone
+  network_id = module.vpc.result.network_id
+}
+
+module "db_config" {
+  source = "./mysql_database"
+  name = "app"
+  password = var.dbpass
+  cluster_id = module.db_cluster.cluster_id
+  dbname = "test"
+}
