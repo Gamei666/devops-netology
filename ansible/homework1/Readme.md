@@ -22,4 +22,5 @@
 
 Задание 11.
 
-![image](https://github.com/user-attachments/assets/ff77ae18-a7e2-4e60-ab76-acd89c244a29)
+![image](https://github.com/user-attachments/assets/2aa53f28-8899-4d59-8d72-536a7dc8dbf6)
+
