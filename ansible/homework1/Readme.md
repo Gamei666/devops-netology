@@ -18,7 +18,7 @@
 
 Задание 8.
 
-![image](https://github.com/user-attachments/assets/f9062bb4-7d29-4ed9-b9b3-46f298f685e4)
+![image](https://github.com/user-attachments/assets/adbd8ddb-42d2-4605-ad4d-18a5131a360e)
 
 Задание 11.
 
