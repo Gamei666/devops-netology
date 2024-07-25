@@ -9,7 +9,8 @@
 
 Задание 6.
 
-![image](https://github.com/user-attachments/assets/b2d047bb-59de-4c90-9aa6-ca556f676c97)
+![image](https://github.com/user-attachments/assets/9c1aa255-c866-4879-89ce-fbfb6af1472f)
+
 
 Задание 7.
 
