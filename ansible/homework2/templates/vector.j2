@@ -1,0 +1,11 @@
+sources:
+  in:
+    type: stdin
+
+sinks:
+  out:
+    type: clickhouse
+    inputs:
+      - "in"
+    endpoint : "http://localhost:8123"
+    table : "logs"
