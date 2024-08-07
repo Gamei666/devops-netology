@@ -1,0 +1,1 @@
+table_columns: ("file" String, "host" String, "message" String, "source_type" String, "timestamp" DateTime)

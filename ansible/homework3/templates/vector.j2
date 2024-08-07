@@ -1,0 +1,31 @@
+sources:
+  nginx:
+    type: file
+    read_from: end
+    ignore_older_secs: 600
+    include:
+      - /var/log/nginx/access.log
+
+sinks:
+  clickhouse:
+    inputs:
+      - nginx
+    type: clickhouse
+    endpoint: {{ clickhouse_addr }}
+    database: {{ database_name }}
+    table: {{ table_name }}
+    encoding:
+      timestamp_format: unix
+    auth:
+      strategy: basic
+      password: {{ password }}
+      user: {{ username }}
+    skip_unknown_fields: true
+  file:
+    inputs:
+      - nginx
+    type: file
+    path: /home/mamahnin/nginx_check.log
+    encoding:
+      codec: json
+    

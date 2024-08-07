@@ -1,0 +1,3 @@
+clickhouse_addr: #enterendpointhere
+database_name: logs
+table_name: nginx
