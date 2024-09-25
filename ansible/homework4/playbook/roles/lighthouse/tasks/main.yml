@@ -1,0 +1,25 @@
+---
+# tasks file for lighthouse
+- name: Install Nginx
+  become: true
+  ansible.builtin.apt:
+    name: nginx
+    update_cache: true
+- name: Install Git
+  become: true
+  ansible.builtin.apt:
+    name: git
+    update_cache: true
+- name: Install Lighthouse
+  become: true
+  ansible.builtin.git:
+    repo: "https://github.com/VKCOM/lighthouse.git"
+    dest: /var/lighthouse
+- name: Config Nginx
+  become: true
+  ansible.builtin.template:
+    src: templates/nginx.j2
+    dest: /etc/nginx/sites-available/default
+    mode: "0744"
+  notify: Reload Nginx
+  

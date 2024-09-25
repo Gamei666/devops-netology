@@ -1,0 +1,39 @@
+---
+- name: Download clickhouse repository key
+  become: true
+  ansible.builtin.get_url:
+    url: "https://packages.clickhouse.com/rpm/lts/repodata/repomd.xml.key"
+    dest: "/etc/apt/keyrings/clickhouse.asc"
+    mode: "0777"
+    force: true
+- name: Setup clickhouse key
+  become: true
+  ansible.builtin.apt_repository:
+    repo: "deb [signed-by=/etc/apt/keyrings/clickhouse.asc] https://packages.clickhouse.com/deb stable main"
+    state: present
+- name: Install clickhouse packages
+  become: true
+  ansible.builtin.apt:
+    name:
+      - clickhouse-client
+      - clickhouse-server
+    update_cache: true
+- name: Change Listening Address
+  become: true
+  ansible.builtin.template:
+    src: templates/clickhouse-server.j2
+    dest: /etc/clickhouse-server/config.d/network.xml
+    mode: "0744"
+  notify: Start clickhouse service
+- name: Flush handlers
+  ansible.builtin.meta: flush_handlers
+- name: Create database, table and user
+  ansible.builtin.shell: |
+    clickhouse-client -q 'create database if not exists {{ database_name }};'
+    clickhouse-client -q "create user if not exists {{ username }} identified by '{{ password }}';"
+    clickhouse-client -q "create table if not exists {{ database_name }}.{{ table_name }} {{ table_columns }} engine=Log;"
+    clickhouse-client -q "grant all on {{ database_name }}.* to {{ username }};"
+  register: create_db
+  failed_when: create_db.rc != 0 and create_db.rc !=82
+  changed_when: create_db == 0
+

@@ -1,0 +1,4 @@
+---
+table_columns: ("file" String, "host" String, "message" String, "source_type" String, "timestamp" DateTime)
+database_name: logs
+table_name: nginx

@@ -1,0 +1,16 @@
+---
+clickhouse:
+  hosts:
+    clickhouse_server1:
+      ansible_host: 84.201.146.129
+      ansible_ssh_private_key_file: /home/mamahnin/yandexcloud_rsa
+vector:
+  hosts:
+    vector_server1:
+      ansible_host: 51.250.39.212
+      ansible_ssh_private_key_file: /home/mamahnin/yandexcloud_rsa
+lighthouse:
+  hosts:
+    lighthouse_server1:
+      ansible_host: 51.250.47.253
+      ansible_ssh_private_key_file: /home/mamahnin/yandexcloud_rsa

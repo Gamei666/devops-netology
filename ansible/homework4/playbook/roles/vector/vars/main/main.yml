@@ -1,0 +1,5 @@
+---
+# vars file for vector
+clickhouse_addr: 10.131.0.18
+database_name: logs
+table_name: nginx

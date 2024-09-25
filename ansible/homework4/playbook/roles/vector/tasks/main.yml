@@ -1,0 +1,18 @@
+---
+# tasks file for vector
+- name: Install Nginx
+  become: true
+  ansible.builtin.apt:
+    name: nginx
+    update_cache: true
+- name: Install Vector
+  become: true
+  ansible.builtin.apt:
+    deb: "https://packages.timber.io/vector/0.40.0/vector_0.40.0-1_amd64.deb"
+- name: Config Vector
+  become: true
+  ansible.builtin.template:
+    src: templates/vector.j2
+    dest: /etc/vector/vector.yaml
+    mode: "0744"
+  notify: Restart Vector service
